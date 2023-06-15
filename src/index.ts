@@ -1,1 +1,1 @@
-export const foo = 'bar';
+export { Time, TimePlugin } from './time';

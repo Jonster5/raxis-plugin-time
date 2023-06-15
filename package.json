@@ -1,31 +1,27 @@
 {
-    "name": "package-name",
-    "version": "0.2.7",
-    "description": "package description",
+    "name": "raxis-plugin-time",
+    "version": "0.0.2",
+    "description": "Time plugin for the Raxis ECS",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc",
         "format": "prettier --write \"src/**/*.(js|ts)\"",
-        "test": "jest --config jest.config.js",
         "prepare": "npm run build",
-        "prepublishOnly": "npm test",
         "version": "npm run format && git add -A src",
         "postversion": "git push && git push --tags"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xxx/xxx.git"
+        "url": "git+https://github.com/Jonster5/raxis-plugin-time.git"
     },
-    "keywords": [
-        
-    ],
+    "keywords": [],
     "author": "Jonster5",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/xxx/xxx/issues"
+        "url": "https://github.com/Jonster5/raxis-plugin-time/issues"
     },
-    "homepage": "https://github.com/xxx/xxx#readme",
+    "homepage": "https://github.com/Jonster5/raxis-plugin-time#readme",
     "devDependencies": {
         "@types/jest": "^29.5.2",
         "jest": "27.4.7",
@@ -36,5 +32,7 @@
     "files": [
         "dist/**/*"
     ],
-    "dependencies": {}
+    "dependencies": {
+        "raxis-core": "^0.2.8"
+    }
 }

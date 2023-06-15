@@ -8,6 +8,10 @@ export class Time {
     ) {}
 }
 
+export class TimeData {
+    constructor(public speed: number = 1) {}
+}
+
 function startTime(ecs: ECS) {
     const time = ecs.getResource(Time);
 
@@ -27,5 +31,5 @@ export const TimePlugin: ECSPlugin = {
     components: [],
     startup: [startTime],
     systems: [updateTime],
-    resources: [new Time(0, 0, 0)],
+    resources: [new Time(0, 0, 0), new TimeData()],
 };

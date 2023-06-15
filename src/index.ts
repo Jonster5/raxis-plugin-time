@@ -1,1 +1,1 @@
-export { Time, TimePlugin, TimeData as TimeSettings } from './time';
+export { Time, TimePlugin, TimeData } from './time';
